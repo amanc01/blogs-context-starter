@@ -35,7 +35,7 @@ export default function AppContextProvider({ children }) {
 
 
     //function to handel page change
-    function handlePageChange(newPage) {
+    function handlerPageChange(newPage) {
         setPage(newPage);
         fetchBlogPosts(newPage);
     }
@@ -54,7 +54,7 @@ export default function AppContextProvider({ children }) {
         totalPages,
         setTotalPages,
         fetchBlogPosts,
-        handlePageChange
+        handlerPageChange
     };
 
     // step 2 -> return provider
